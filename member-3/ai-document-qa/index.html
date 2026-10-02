@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Document Q&A</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="shell">
+
+    <header>
+        <div>
+            <span>AI INTERFACE 02</span>
+            <h1>Document Q&A</h1>
+            <p>Ask questions about your selected document.</p>
+        </div>
+
+        <button id="clear">Clear</button>
+    </header>
+
+    <section class="layout">
+
+        <aside class="card">
+
+            <h2>Documents</h2>
+
+            <button class="doc active">
+                Product Brief.pdf
+                <small>24 pages</small>
+            </button>
+
+            <button class="doc">
+                Research Notes.pdf
+                <small>8 pages</small>
+            </button>
+
+            <button class="doc">
+                Project Plan.docx
+                <small>11 pages</small>
+            </button>
+
+        </aside>
+
+        <section class="card chat">
+
+            <div id="messages">
+
+                <div class="message ai">
+                    <strong>AI</strong>
+                    <p>
+                        I'm ready. Ask me anything about
+                        the Product Brief.
+                    </p>
+                </div>
+
+            </div>
+
+            <form id="form">
+
+                <input
+                    id="question"
+                    placeholder="Ask about the document..."
+                    autocomplete="off"
+                >
+
+                <button>Ask</button>
+
+            </form>
+
+        </section>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

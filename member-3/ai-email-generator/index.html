@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Email Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+
+    <header>
+
+        <div>
+            <span>AI INTERFACE 06</span>
+            <h1>Email Generator</h1>
+            <p>
+                Generate clear emails from a short instruction.
+            </p>
+        </div>
+
+    </header>
+
+    <section class="card form">
+
+        <label>Purpose</label>
+
+        <input
+            id="purpose"
+            value="Ask a client to confirm the project meeting time"
+        >
+
+        <div class="row">
+
+            <div>
+                <label>Tone</label>
+
+                <select id="tone">
+                    <option>Professional</option>
+                    <option>Friendly</option>
+                    <option>Concise</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Length</label>
+
+                <select id="length">
+                    <option>Medium</option>
+                    <option>Short</option>
+                    <option>Detailed</option>
+                </select>
+            </div>
+
+        </div>
+
+        <button id="generate">
+            Generate Email
+        </button>
+
+    </section>
+
+    <section class="card output">
+
+        <div class="head">
+            <h2>Draft</h2>
+            <button id="copy">Copy</button>
+        </div>
+
+        <div id="email">
+
+            <strong>Subject: Meeting confirmation</strong>
+
+            <p>Hello,</p>
+
+            <p>
+                Could you please confirm the project meeting time?
+                I would like to make sure the schedule works for everyone.
+            </p>
+
+            <p>
+                Thank you,<br>
+                Your Name
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

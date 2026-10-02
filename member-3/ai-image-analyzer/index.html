@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+
+    <header>
+        <div>
+            <span>AI INTERFACE 03</span>
+            <h1>Image Analyzer</h1>
+            <p>
+                Inspect an image with AI and review
+                detected elements.
+            </p>
+        </div>
+    </header>
+
+    <section class="layout">
+
+        <section class="card upload">
+
+            <input
+                id="imageInput"
+                type="file"
+                accept="image/*"
+                hidden
+            >
+
+            <div id="preview" class="preview">
+                No image selected
+            </div>
+
+            <button id="choose">Choose Image</button>
+
+        </section>
+
+        <section class="card">
+
+            <div class="head">
+                <h2>AI Vision Results</h2>
+                <span id="status">Waiting</span>
+            </div>
+
+            <div id="results" class="results">
+
+                <div>
+                    <b>Objects</b>
+                    <span>—</span>
+                </div>
+
+                <div>
+                    <b>Scene</b>
+                    <span>—</span>
+                </div>
+
+                <div>
+                    <b>Text</b>
+                    <span>—</span>
+                </div>
+
+                <div>
+                    <b>Confidence</b>
+                    <span>—</span>
+                </div>
+
+            </div>
+
+        </section>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
