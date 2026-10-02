@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Autocomplete</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>AI Autocomplete</h1>
+    <p>Get smart text suggestions</p>
+</header>
+
+<div class="page">
+
+    <a href="index.html" class="back">← Back to Home</a>
+
+    <div class="box">
+
+        <h2>Start typing</h2>
+
+        <input
+            type="text"
+            id="autoInput"
+            placeholder="Type something..."
+            onkeyup="autocomplete()"
+        >
+
+        <div id="suggestions"></div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

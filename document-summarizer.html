@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Document Summarizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>AI Document Summarizer</h1>
+    <p>Summarize long text using AI</p>
+</header>
+
+<div class="page">
+
+    <a href="index.html" class="back">← Back to Home</a>
+
+    <div class="box">
+
+        <h2>Enter Document</h2>
+
+        <textarea
+            id="document"
+            placeholder="Paste your document text here..."
+        ></textarea>
+
+        <button onclick="summarize()">Summarize Document</button>
+
+        <div id="result" class="result"></div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

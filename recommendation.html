@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Recommendation Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>AI Recommendation Card</h1>
+    <p>Get personalized recommendations</p>
+</header>
+
+<div class="page">
+
+    <a href="index.html" class="back">← Back to Home</a>
+
+    <div class="box">
+        <h2>What would you like to learn?</h2>
+
+        <select>
+            <option>Web Development</option>
+            <option>Python</option>
+            <option>Data Science</option>
+            <option>Artificial Intelligence</option>
+        </select>
+
+        <button onclick="recommend()">Get Recommendation</button>
+
+        <div id="result" class="result"></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ask Your Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Ask Your Data</h1>
+    <p>Interact with your data using AI</p>
+</header>
+
+<div class="page">
+
+    <a href="index.html" class="back">← Back to Home</a>
+
+    <div class="box">
+
+        <h2>Student Data</h2>
+
+        <p>Total Students: 120</p>
+        <p>Average Attendance: 86%</p>
+        <p>Average Marks: 78%</p>
+
+        <input
+            type="text"
+            id="dataQuestion"
+            placeholder="Ask about your data..."
+        >
+
+        <button onclick="askData()">Ask Your Data</button>
+
+        <div id="result" class="result"></div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

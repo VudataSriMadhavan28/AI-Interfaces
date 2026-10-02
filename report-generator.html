@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Report Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>AI Report Generator</h1>
+    <p>Create reports using AI</p>
+</header>
+
+<div class="page">
+
+    <a href="index.html" class="back">← Back to Home</a>
+
+    <div class="box">
+
+        <h2>Generate Report</h2>
+
+        <input
+            type="text"
+            placeholder="Enter report title"
+        >
+
+        <textarea
+            placeholder="Enter information for the report..."
+        ></textarea>
+
+        <select>
+            <option>Simple Report</option>
+            <option>Business Report</option>
+            <option>Student Report</option>
+            <option>Project Report</option>
+        </select>
+
+        <button onclick="generateReport()">Generate AI Report</button>
+
+        <div id="result" class="result"></div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
