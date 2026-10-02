@@ -291,3 +291,12 @@ The objective is to build reusable UI patterns while gaining practical experienc
 4. Uizard – UI Templates
 5. Material UI – Templates
 6. n8n – Workflow Templates
+
+Screenshots:
+member3
+<img width="1075" height="670" alt="Screenshot 2026-10-02 220143" src="https://github.com/user-attachments/assets/a2b40a7b-07bb-435a-9be2-cbe7eef7d010" />
+<img width="1242" height="762" alt="Screenshot 2026-10-02 220200" src="https://github.com/user-attachments/assets/81269bec-2138-4734-8b1e-51ad6389c88a" />
+<img width="1258" height="746" alt="Screenshot 2026-10-02 220220" src="https://github.com/user-attachments/assets/ce55be59-4e51-4fe6-b8a7-4011a32dde37" />
+<img width="1183" height="803" alt="Screenshot 2026-10-02 220328" src="https://github.com/user-attachments/assets/b0efb769-209b-446f-b567-7fa0e1dd2014" />
+
+
