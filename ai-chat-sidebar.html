@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat Sidebar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h2>AI Interfaces</h2>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="ai-assistant.html">1</a>
+        <a href="ai-chat.html">2</a>
+        <a href="ai-chat-sidebar.html">3</a>
+        <a href="ai-command-bar.html">4</a>
+        <a href="ai-search.html">5</a>
+        <a href="ai-search-results.html">6</a>
+        <a href="ai-prompt-interface.html">7</a>
+        <a href="ai-prompt-suggestions.html">8</a>
+        <a href="ai-response-card.html">9</a>
+        <a href="ai-summary-card.html">10</a>
+    </nav>
+</header>
+
+<main>
+
+    <div class="layout">
+
+        <aside class="sidebar">
+
+            <h2>AI Chats</h2>
+
+            <button
+                class="side"
+                onclick="loadChat('Study Help')">
+                Study Help
+            </button>
+
+            <button
+                class="side"
+                onclick="loadChat('Web Development')">
+                Web Development
+            </button>
+
+            <button
+                class="side"
+                onclick="loadChat('General Chat')">
+                General Chat
+            </button>
+
+        </aside>
+
+        <section>
+
+            <div class="hero">
+
+                <span class="tag">03</span>
+
+                <h1>AI Chat Sidebar</h1>
+
+                <p>
+                    Switch between different AI conversations.
+                </p>
+
+            </div>
+
+            <div class="chat-box" id="chatBox">
+
+                <div class="message bot">
+                    Select a chat from the sidebar.
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <input
+                    id="userInput"
+                    placeholder="Type your message..."
+                >
+
+                <button onclick="sendMessage()">
+                    Send
+                </button>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</main>
+
+<footer>
+    AI Interfaces Project | Member 1
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
