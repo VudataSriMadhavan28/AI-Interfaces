@@ -301,6 +301,37 @@ The objective is to build reusable UI patterns while gaining practical experienc
 
   <img width="1463" height="825" alt="Screenshot 2026-10-02 at 21 58 12" src="https://github.com/user-attachments/assets/4b9ced3c-0aec-43ea-b8dd-da76ca7a102a" />
 
+
+
+
+##Al Recommendation Card
+
+<img width="1468" height="735" alt="Screenshot 2026-10-02 at 21 58 25" src="https://github.com/user-attachments/assets/d06ff41e-544f-414c-b37f-edfa268cc155" />
+
+
+
+
+##Al Insight Card
+
+<img width="1458" height="819" alt="Screenshot 2026-10-02 at 21 58 50" src="https://github.com/user-attachments/assets/68f5f6ce-512e-42a7-8a6a-07952a00fe02" />
+
+
+
+
+##Ask Your Data
+
+<img width="1464" height="819" alt="Screenshot 2026-10-02 at 22 20 46" src="https://github.com/user-attachments/assets/85be79eb-915d-4688-aeaa-f6fdf5f3bfbf" />
+
+
+
+
+
+##Al Copilot
+
+<img width="1455" height="818" alt="Screenshot 2026-10-02 at 22 43 08" src="https://github.com/user-attachments/assets/f6fd504e-7555-4a58-9c23-47f84a037bf7" />
+
+
+
   
 
 
