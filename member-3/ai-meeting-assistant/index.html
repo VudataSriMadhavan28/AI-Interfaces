@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Meeting Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+
+    <header>
+
+        <div>
+            <span>AI INTERFACE 05</span>
+            <h1>Meeting Assistant</h1>
+            <p>
+                Turn meeting notes into a structured action plan.
+            </p>
+        </div>
+
+        <button id="summarize">
+            Generate Summary
+        </button>
+
+    </header>
+
+    <section class="grid">
+
+        <div class="card">
+
+            <h2>Meeting Notes</h2>
+
+            <textarea id="notes">Discuss website launch, assign QA testing, finalize content, and confirm the Friday demo schedule.</textarea>
+
+        </div>
+
+        <div class="card">
+
+            <h2>AI Summary</h2>
+
+            <div id="summary" class="summary">
+
+                <div>
+                    <b>Overview</b>
+                    <p>Waiting for AI processing.</p>
+                </div>
+
+                <div>
+                    <b>Decisions</b>
+                    <p>—</p>
+                </div>
+
+                <div>
+                    <b>Action Items</b>
+                    <p>—</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
