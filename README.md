@@ -297,28 +297,28 @@ The objective is to build reusable UI patterns while gaining practical experienc
 
   #Member-1
 
-  ##Modern AI UI Template Collection-AI Interfaces
+  ## Modern AI UI Template Collection-AI Interfaces
 
   <img width="1463" height="825" alt="Screenshot 2026-10-02 at 21 58 12" src="https://github.com/user-attachments/assets/4b9ced3c-0aec-43ea-b8dd-da76ca7a102a" />
 
 
 
 
-##Al Recommendation Card
+## Al Recommendation Card
 
 <img width="1468" height="735" alt="Screenshot 2026-10-02 at 21 58 25" src="https://github.com/user-attachments/assets/d06ff41e-544f-414c-b37f-edfa268cc155" />
 
 
 
 
-##Al Insight Card
+## Al Insight Card
 
 <img width="1458" height="819" alt="Screenshot 2026-10-02 at 21 58 50" src="https://github.com/user-attachments/assets/68f5f6ce-512e-42a7-8a6a-07952a00fe02" />
 
 
 
 
-##Ask Your Data
+## Ask Your Data
 
 <img width="1464" height="819" alt="Screenshot 2026-10-02 at 22 20 46" src="https://github.com/user-attachments/assets/85be79eb-915d-4688-aeaa-f6fdf5f3bfbf" />
 
@@ -326,13 +326,49 @@ The objective is to build reusable UI patterns while gaining practical experienc
 
 
 
-##Al Copilot
+## Al Copilot
 
 <img width="1455" height="818" alt="Screenshot 2026-10-02 at 22 43 08" src="https://github.com/user-attachments/assets/f6fd504e-7555-4a58-9c23-47f84a037bf7" />
 
 
 
   
+#Member-2
+
+## Home Page
+
+<img width="1463" height="807" alt="Screenshot 2026-10-02 at 10 14 19 PM" src="https://github.com/user-attachments/assets/d5b3d4e3-3995-4ae0-8dbd-1a7c37e221b7" />
+
+
+
+## AI Assistant
+
+<img width="1444" height="781" alt="Screenshot 2026-10-02 at 10 14 35 PM" src="https://github.com/user-attachments/assets/b4bb55db-3efe-450e-9657-507f2a088756" />
+
+
+
+## Al Summary Card
+
+<img width="1437" height="769" alt="Screenshot 2026-10-02 at 10 15 37 PM" src="https://github.com/user-attachments/assets/8233641b-6741-47e2-a6ee-3b83e427863e" />
+
+
+
+## Al Search Results
+
+<img width="1421" height="771" alt="Screenshot 2026-10-02 at 10 14 51 PM" src="https://github.com/user-attachments/assets/71f8ada9-3891-4faf-9d2f-341b9adfcbf0" />
+
+
+
+## Al Prompt Interface
+
+<img width="1445" height="779" alt="Screenshot 2026-10-02 at 11 00 51 PM" src="https://github.com/user-attachments/assets/c699a5e1-e508-4a6b-b813-e1313490df9a" />
+
+
+
+
+
+
+
 
 
   
