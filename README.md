@@ -295,7 +295,8 @@ The objective is to build reusable UI patterns while gaining practical experienc
 
 ## Screenshots
 
-  #Member-1
+  ## Member-1
+
 
   ## Modern AI UI Template Collection-AI Interfaces
 
@@ -332,8 +333,10 @@ The objective is to build reusable UI patterns while gaining practical experienc
 
 
 
+
+
   
-#Member-2
+## Member-2
 
 ## Home Page
 
