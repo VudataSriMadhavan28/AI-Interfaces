@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Content Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>AI Content Generator</h1>
+    <p>Create content with AI</p>
+</header>
+
+<div class="page">
+
+    <a href="index.html" class="back">← Back to Home</a>
+
+    <div class="box">
+
+        <h2>Enter your topic</h2>
+
+        <input
+            type="text"
+            id="topic"
+            placeholder="Example: Artificial Intelligence"
+        >
+
+        <select>
+            <option>Blog</option>
+            <option>Social Media Post</option>
+            <option>Article</option>
+            <option>Short Description</option>
+        </select>
+
+        <button onclick="generateContent()">Generate Content</button>
+
+        <div id="result" class="result"></div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

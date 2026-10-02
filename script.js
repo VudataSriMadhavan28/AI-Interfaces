@@ -1,194 +1,160 @@
-function addMessage(text, type) {
-
-    const box = document.getElementById("chatBox");
-
-    if (!box) {
-        return;
-    }
-
-    const message = document.createElement("div");
-
-    message.className = "message " + type;
-
-    message.textContent = text;
-
-    box.appendChild(message);
-
-    box.scrollTop = box.scrollHeight;
+function showResult(id, message) {
+    let result = document.getElementById(id);
+    result.innerHTML = message;
+    result.style.display = "block";
 }
 
+function recommend() {
+    showResult(
+        "result",
+        "<h3>AI Recommendations</h3><p>1. Learn HTML and CSS</p><p>2. Practice JavaScript</p><p>3. Build small projects</p>"
+    );
+}
 
-function sendMessage() {
+function generateInsight() {
+    showResult(
+        "result",
+        "<h3>AI Insight</h3><p>Your data shows a positive improvement compared to the previous period.</p>"
+    );
+}
 
-    const input = document.getElementById("userInput");
+function generateContent() {
+    let topic = document.getElementById("topic").value;
 
-    if (!input || !input.value.trim()) {
+    if (topic == "") {
+        alert("Please enter a topic.");
         return;
     }
 
-    let text = input.value.trim();
+    showResult(
+        "result",
+        "<h3>Generated Content</h3><p>Here is AI-generated content about <b>" +
+        topic +
+        "</b>. This is a simple demonstration of an AI content generator interface.</p>"
+    );
+}
 
-    addMessage(text, "user");
+function summarize() {
+    let text = document.getElementById("document").value;
+
+    if (text == "") {
+        alert("Please enter some text.");
+        return;
+    }
+
+    showResult(
+        "result",
+        "<h3>Summary</h3><p>" +
+        text.substring(0, 150) +
+        "...</p>"
+    );
+}
+
+function queryAI() {
+    let query = document.getElementById("query").value;
+
+    if (query == "") {
+        alert("Please enter a question.");
+        return;
+    }
+
+    showResult(
+        "result",
+        "<h3>AI Answer</h3><p>You asked: <b>" +
+        query +
+        "</b></p><p>This is a sample AI response for the interface demonstration.</p>"
+    );
+}
+
+function askData() {
+    let question = document.getElementById("dataQuestion").value;
+
+    if (question == "") {
+        alert("Please ask a question.");
+        return;
+    }
+
+    showResult(
+        "result",
+        "<h3>Data Answer</h3><p>Based on the available data, the answer to your question is displayed here.</p>"
+    );
+}
+
+function createChart() {
+    showResult(
+        "result",
+        "<h3>Generated Chart</h3>" +
+        "<div class='chart'>" +
+        "<div class='bar' style='height:80px'></div>" +
+        "<div class='bar' style='height:140px'></div>" +
+        "<div class='bar' style='height:190px'></div>" +
+        "<div class='bar' style='height:120px'></div>" +
+        "<div class='bar' style='height:220px'></div>" +
+        "</div>"
+    );
+}
+
+function generateReport() {
+    showResult(
+        "result",
+        "<h3>AI Report</h3>" +
+        "<p><b>Introduction:</b> This report provides a simple overview of the given information.</p>" +
+        "<p><b>Analysis:</b> The information shows useful patterns and trends.</p>" +
+        "<p><b>Conclusion:</b> The results can be used for better decision making.</p>"
+    );
+}
+
+function sendMessage() {
+    let input = document.getElementById("chatInput");
+    let chat = document.getElementById("chat");
+
+    if (input.value == "") {
+        return;
+    }
+
+    chat.innerHTML +=
+        "<div class='message user'>" +
+        input.value +
+        "</div>";
+
+    chat.innerHTML +=
+        "<div class='message ai'>AI: I understand your question. This is a sample AI Copilot response.</div>";
 
     input.value = "";
 
-    setTimeout(function () {
-
-        addMessage(
-            "AI: I understood your message. This is a sample AI response.",
-            "bot"
-        );
-
-    }, 400);
+    chat.scrollTop = chat.scrollHeight;
 }
 
+function autocomplete() {
+    let input = document.getElementById("autoInput");
+    let suggestions = document.getElementById("suggestions");
 
-function loadChat(name) {
+    let text = input.value.toLowerCase();
 
-    document.getElementById("chatBox").innerHTML =
-        '<div class="message bot">You selected ' +
-        name +
-        '. How can I help?</div>';
-}
+    suggestions.innerHTML = "";
 
-
-function setCommand(text) {
-
-    document.getElementById("commandInput").value = text;
-}
-
-
-function runCommand() {
-
-    let value =
-        document.getElementById("commandInput").value.trim();
-
-    if (value) {
-
-        document.getElementById("commandResult").textContent =
-            "AI completed: " + value;
-
-    } else {
-
-        document.getElementById("commandResult").textContent =
-            "Please enter a command.";
-    }
-}
-
-
-function aiSearch() {
-
-    let query =
-        document.getElementById("searchInput").value.trim();
-
-    let result =
-        document.getElementById("searchResult");
-
-    if (!query) {
-
-        result.innerHTML =
-            '<div class="card">Please enter a search.</div>';
-
+    if (text == "") {
         return;
     }
 
-    result.innerHTML =
-        '<div class="search-result">' +
-        '<h3>AI Answer</h3>' +
-        '<p>Here is a sample AI answer for <b>' +
-        query +
-        '</b>.</p>' +
-        '<small>AI generated result</small>' +
-        '</div>' +
+    let words = [
+        "Artificial Intelligence",
+        "Artificial Intelligence in Education",
+        "Artificial Intelligence in Healthcare",
+        "Artificial Intelligence in Business"
+    ];
 
-        '<div class="search-result">' +
-        '<h3>Related Information</h3>' +
-        '<p>More information related to your search can appear here.</p>' +
-        '</div>';
+    words.forEach(function(word) {
+        if (word.toLowerCase().includes(text)) {
+            suggestions.innerHTML +=
+                "<div class='suggestion' onclick='selectSuggestion(this)'>" +
+                word +
+                "</div>";
+        }
+    });
 }
 
-
-function generatePrompt() {
-
-    let prompt =
-        document.getElementById("promptInput").value.trim();
-
-    let result =
-        document.getElementById("promptResult");
-
-    if (prompt) {
-
-        result.textContent =
-            "AI Response: " +
-            prompt +
-            " — This is a sample response from the AI interface.";
-
-    } else {
-
-        result.textContent =
-            "Please enter a prompt.";
-    }
-}
-
-
-function clearPrompt() {
-
-    document.getElementById("promptInput").value = "";
-
-    document.getElementById("promptResult").textContent =
-        "Your AI response will appear here.";
-}
-
-
-function useSuggestion(button) {
-
-    document.getElementById("selectedPrompt").textContent =
-        button.textContent;
-}
-
-
-function copyResponse() {
-
-    let text =
-        document.getElementById("responseText").textContent;
-
-    navigator.clipboard.writeText(text);
-
-    document.getElementById("actionMessage").textContent =
-        "Response copied.";
-}
-
-
-function likeResponse() {
-
-    document.getElementById("actionMessage").textContent =
-        "Thanks for your feedback!";
-}
-
-
-function regenerate() {
-
-    document.getElementById("responseText").textContent =
-        "This is a new sample AI response generated again.";
-
-    document.getElementById("actionMessage").textContent =
-        "Response regenerated.";
-}
-
-
-function summarize() {
-
-    let text =
-        document.getElementById("sourceText").value.trim();
-
-    if (text) {
-
-        document.getElementById("summary").textContent =
-            "AI Summary: The text explains how AI is used in different fields and how modern AI interfaces make AI tools easier to use.";
-
-    } else {
-
-        document.getElementById("summary").textContent =
-            "Please enter text first.";
-    }
+function selectSuggestion(element) {
+    document.getElementById("autoInput").value = element.innerText;
+    document.getElementById("suggestions").innerHTML = "";
 }
