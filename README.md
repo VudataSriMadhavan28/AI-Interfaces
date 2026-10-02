@@ -293,7 +293,18 @@ The objective is to build reusable UI patterns while gaining practical experienc
 6. n8n – Workflow Templates
 
 
+## Screenshots
 
+  #Member-1
+
+  ##Modern AI UI Template Collection-AI Interfaces
+
+  <img width="1463" height="825" alt="Screenshot 2026-10-02 at 21 58 12" src="https://github.com/user-attachments/assets/4b9ced3c-0aec-43ea-b8dd-da76ca7a102a" />
+
+  
+
+
+  
 
 
 
