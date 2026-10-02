@@ -291,3 +291,45 @@ The objective is to build reusable UI patterns while gaining practical experienc
 4. Uizard – UI Templates
 5. Material UI – Templates
 6. n8n – Workflow Templates
+
+
+
+## Screenshots
+  #Member-1
+
+   ###Modern AI UI Template Collection-AI Interfaces
+
+<img width="1463" height="825" alt="Screenshot 2026-10-02 at 21 58 12" src="https://github.com/user-attachments/assets/fdb1c56d-49aa-4d95-b621-9f396154fa42" />
+
+
+##Al Recommendation Card
+
+<img width="1470" height="812" alt="Screenshot 2026-10-02 at 21 58 42" src="https://github.com/user-attachments/assets/c2b8c069-4ea5-49ff-91f3-40ded4bd17d5" />
+
+
+##Al Insight Card
+
+<img width="1468" height="735" alt="Screenshot 2026-10-02 at 21 58 25" src="https://github.com/user-attachments/assets/ff6fa9d6-b82d-4fc7-bfc2-7dfc4d23b519" />
+
+##AI Report Generator
+
+
+<img width="1465" height="816" alt="Screenshot 2026-10-02 at 22 17 21" src="https://github.com/user-attachments/assets/e55b9272-b409-4e6c-b5bf-14b7c161cc44" />
+
+
+##Ask Your Data
+
+<img width="1464" height="819" alt="Screenshot 2026-10-02 at 22 20 46" src="https://github.com/user-attachments/assets/a805d01e-d7f5-4112-9bf6-3b64f82ff879" />
+
+
+
+
+
+
+
+
+
+
+
+
+
