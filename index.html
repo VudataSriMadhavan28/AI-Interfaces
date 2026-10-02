@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Interface Collection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="brand-icon">✦</div>
+            <div>
+                <h2>NeuraUI</h2>
+                <span>AI Interface Lab</span>
+            </div>
+        </div>
+
+        <div class="menu-title">AI TOOLS</div>
+
+        <button class="nav-item active" onclick="showPage('resume', this)">
+            <span>📄</span>
+            Resume Analyzer
+        </button>
+
+        <button class="nav-item" onclick="showPage('interview', this)">
+            <span>🎤</span>
+            Interview Assistant
+        </button>
+
+        <button class="nav-item" onclick="showPage('study', this)">
+            <span>📚</span>
+            Study Assistant
+        </button>
+
+        <button class="nav-item" onclick="showPage('writing', this)">
+            <span>✍️</span>
+            Writing Assistant
+        </button>
+
+        <button class="nav-item" onclick="showPage('translation', this)">
+            <span>🌐</span>
+            Translation
+        </button>
+
+        <button class="nav-item" onclick="showPage('tasks', this)">
+            <span>✓</span>
+            Task Planner
+        </button>
+
+        <button class="nav-item" onclick="showPage('stylist', this)">
+            <span>👕</span>
+            Personal Stylist
+        </button>
+
+        <button class="nav-item" onclick="showPage('fitness', this)">
+            <span>🏃</span>
+            Health & Fitness
+        </button>
+
+        <button class="nav-item" onclick="showPage('feedback', this)">
+            <span>💬</span>
+            Feedback
+        </button>
+
+        <button class="nav-item" onclick="showPage('roadmap', this)">
+            <span>🗺️</span>
+            Learning Roadmap
+        </button>
+
+        <div class="sidebar-bottom">
+            <div class="ai-status">
+                <div class="status-dot"></div>
+                <div>
+                    <strong>AI System Online</strong>
+                    <small>Ready to assist</small>
+                </div>
+            </div>
+        </div>
+
+    </aside>
+
+
+    <main class="main">
+
+        <header class="topbar">
+            <div>
+                <span class="breadcrumb">AI INTERFACES /</span>
+                <strong id="pageName">Resume Analyzer</strong>
+            </div>
+
+            <div class="top-actions">
+                <button class="icon-btn">🔔</button>
+                <div class="profile">
+                    <div class="avatar">M</div>
+                    <span>Madhavan</span>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- ================= RESUME ================= -->
+
+        <section id="resume" class="page active-page">
+
+            <div class="hero">
+                <div>
+                    <span class="eyebrow">AI CAREER TOOL</span>
+                    <h1>AI Resume Analyzer</h1>
+                    <p>Upload your resume and discover how well it matches your target role.</p>
+                </div>
+
+                <button class="primary-btn" onclick="analyzeResume()">
+                    ✦ Analyze Resume
+                </button>
+            </div>
+
+            <div class="resume-grid">
+
+                <div class="card upload-card">
+
+                    <div class="card-heading">
+                        <div>
+                            <h3>Upload Resume</h3>
+                            <p>PDF, DOCX or TXT · Maximum 10MB</p>
+                        </div>
+                    </div>
+
+                    <div class="upload-box">
+                        <div class="upload-icon">↑</div>
+                        <h3>Drop your resume here</h3>
+                        <p>or choose a file from your computer</p>
+                        <button class="secondary-btn">Choose File</button>
+                    </div>
+
+                    <div class="target-role">
+                        <label>Target Job Role</label>
+                        <input type="text" placeholder="e.g. Python Developer">
+                    </div>
+
+                </div>
+
+
+                <div class="card score-card">
+
+                    <div class="score-header">
+                        <h3>Resume Score</h3>
+                        <span class="badge green">Good</span>
+                    </div>
+
+                    <div class="score-circle">
+                        <div>
+                            <strong id="resumeScore">82</strong>
+                            <span>/100</span>
+                        </div>
+                    </div>
+
+                    <div class="score-items">
+                        <div>
+                            <span>ATS Compatibility</span>
+                            <strong>89%</strong>
+                        </div>
+
+                        <div>
+                            <span>Skills Match</span>
+                            <strong>81%</strong>
+                        </div>
+
+                        <div>
+                            <span>Experience</span>
+                            <strong>76%</strong>
+                        </div>
+
+                        <div>
+                            <span>Formatting</span>
+                            <strong>92%</strong>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="section-title">
+                <h2>AI Insights</h2>
+                <span>Personalized recommendations</span>
+            </div>
+
+            <div class="insight-grid">
+
+                <div class="insight-card positive">
+                    <span class="insight-icon">✓</span>
+                    <div>
+                        <h3>Strong Skills Section</h3>
+                        <p>Your technical skills are clearly organized and easy for ATS systems to scan.</p>
+                    </div>
+                </div>
+
+                <div class="insight-card warning">
+                    <span class="insight-icon">!</span>
+                    <div>
+                        <h3>Add Quantifiable Results</h3>
+                        <p>Include numbers and measurable results in your project descriptions.</p>
+                    </div>
+                </div>
+
+                <div class="insight-card improvement">
+                    <span class="insight-icon">✦</span>
+                    <div>
+                        <h3>Missing Keywords</h3>
+                        <p>Consider adding REST APIs, Git and FastAPI for your target role.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= INTERVIEW ================= -->
+
+        <section id="interview" class="page">
+
+            <div class="hero">
+                <div>
+                    <span class="eyebrow">AI INTERVIEW PREP</span>
+                    <h1>AI Interview Assistant</h1>
+                    <p>Practice interviews with an AI interviewer and receive instant feedback.</p>
+                </div>
+
+                <span class="live-badge">● LIVE SESSION</span>
+            </div>
+
+            <div class="interview-layout">
+
+                <div class="card interview-main">
+
+                    <div class="interviewer">
+                        <div class="ai-avatar">✦</div>
+
+                        <div>
+                            <span>AI Interviewer</span>
+                            <h2>Tell me about yourself.</h2>
+                        </div>
+                    </div>
+
+                    <div class="timer">00:42</div>
+
+                    <div class="answer-box">
+                        <textarea placeholder="Type your answer here..."></textarea>
+                    </div>
+
+                    <div class="interview-actions">
+                        <button class="secondary-btn">🎙 Record Answer</button>
+                        <button class="primary-btn" onclick="nextQuestion()">Next Question →</button>
+                    </div>
+
+                </div>
+
+
+                <div class="card interview-feedback">
+
+                    <h3>Live Feedback</h3>
+
+                    <div class="feedback-score">
+                        <span>Confidence</span>
+                        <strong>78%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:78%"></div>
+                    </div>
+
+                    <div class="feedback-score">
+                        <span>Clarity</span>
+                        <strong>84%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:84%"></div>
+                    </div>
+
+                    <div class="feedback-score">
+                        <span>Relevance</span>
+                        <strong>91%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:91%"></div>
+                    </div>
+
+                    <div class="tip-box">
+                        <strong>AI Tip</strong>
+                        <p>Try adding a specific project example to make your answer stronger.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= STUDY ================= -->
+
+        <section id="study" class="page">
+
+            <div class="hero">
+                <div>
+                    <span class="eyebrow">LEARNING COPILOT</span>
+                    <h1>AI Study Assistant</h1>
+                    <p>Learn difficult concepts with personalized AI explanations.</p>
+                </div>
+            </div>
+
+            <div class="study-grid">
+
+                <div class="card study-chat">
+
+                    <div class="chat-header">
+                        <div class="ai-avatar small">✦</div>
+                        <div>
+                            <strong>StudyMate AI</strong>
+                            <small>Online · Ready to help</small>
+                        </div>
+                    </div>
+
+                    <div class="messages">
+
+                        <div class="message ai">
+                            Hi! What would you like to study today?
+                        </div>
+
+                        <div class="message user">
+                            Explain Divide and Conquer in simple words.
+                        </div>
+
+                        <div class="message ai">
+                            Divide and Conquer means breaking a big problem into smaller problems, solving them, and combining the results.
+                        </div>
+
+                    </div>
+
+                    <div class="chat-input">
+                        <input id="studyInput" type="text" placeholder="Ask anything about your subject...">
+                        <button onclick="sendStudyMessage()">➤</button>
+                    </div>
+
+                </div>
+
+
+                <div class="card study-tools">
+
+                    <h3>Study Tools</h3>
+
+                    <button class="tool-button">
+                        <span>🧠</span>
+                        <div>
+                            <strong>Explain Concept</strong>
+                            <small>Get a simple explanation</small>
+                        </div>
+                    </button>
+
+                    <button class="tool-button">
+                        <span>📝</span>
+                        <div>
+                            <strong>Generate Quiz</strong>
+                            <small>Test your knowledge</small>
+                        </div>
+                    </button>
+
+                    <button class="tool-button">
+                        <span>📌</span>
+                        <div>
+                            <strong>Create Flashcards</strong>
+                            <small>Quick revision cards</small>
+                        </div>
+                    </button>
+
+                    <button class="tool-button">
+                        <span>📊</span>
+                        <div>
+                            <strong>Summarize Notes</strong>
+                            <small>Convert notes into key points</small>
+                        </div>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= WRITING ================= -->
+
+        <section id="writing" class="page">
+
+            <div class="hero">
+                <div>
+                    <span class="eyebrow">AI CONTENT TOOL</span>
+                    <h1>AI Writing Assistant</h1>
+                    <p>Write, improve and transform your content with AI.</p>
+                </div>
+
+                <button class="primary-btn" onclick="generateWriting()">✦ Generate</button>
+            </div>
+
+            <div class="writing-layout">
+
+                <div class="card editor-card">
+
+                    <div class="editor-toolbar">
+                        <button>↶</button>
+                        <button>↷</button>
+                        <span></span>
+                        <button>B</button>
+                        <button><i>I</i></button>
+                        <button>U</button>
+                        <span></span>
+                        <button>☷</button>
+                        <button>☰</button>
+                    </div>
+
+                    <textarea id="writingText" placeholder="Start writing or paste your content here..."></textarea>
+
+                    <div class="word-count">
+                        <span>0 words</span>
+                        <span>AI ready</span>
+                    </div>
+
+                </div>
+
+
+                <div class="card writing-tools">
+
+                    <h3>AI Actions</h3>
+
+                    <button class="action-button" onclick="writingAction('Improve')">
+                        ✨ Improve Writing
+                    </button>
+
+                    <button class="action-button" onclick="writingAction('Summarize')">
+                        📋 Summarize
+                    </button>
+
+                    <button class="action-button" onclick="writingAction('Rewrite')">
+                        🔄 Rewrite
+                    </button>
+
+                    <button class="action-button" onclick="writingAction('Professional')">
+                        💼 Make Professional
+                    </button>
+
+                    <button class="action-button" onclick="writingAction('Grammar')">
+                        ✓ Fix Grammar
+                    </button>
+
+                    <div class="tone-box">
+                        <label>Tone</label>
+                        <select>
+                            <option>Professional</option>
+                            <option>Friendly</option>
+                            <option>Academic</option>
+                            <option>Creative</option>
+                            <option>Casual</option>
+                        </select>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= TRANSLATION ================= -->
+
+        <section id="translation" class="page">
+
+            <div class="hero">
+                <div>
+                    <span class="eyebrow">LANGUAGE AI</span>
+                    <h1>AI Translation Interface</h1>
+                    <p>Translate text while preserving meaning and context.</p>
+                </div>
+            </div>
+
+            <div class="translation-card card">
+
+                <div class="language-row">
+
+                    <select id="sourceLanguage">
+                        <option>English</option>
+                        <option>Telugu</option>
+                        <option>Hindi</option>
+                        <option>Tamil</option>
+                    </select>
+
+                    <button class="swap-btn" onclick="swapLanguages()">⇄</button>
+
+                    <select id="targetLanguage">
+                        <option>Telugu</option>
+                        <option>English</option>
+                        <option>Hindi</option>
+                        <option>Tamil</option>
+                    </select>
+
+                </div>
+
+                <div class="translation-box">
+
+                    <div>
+                        <textarea id="sourceText" placeholder="Enter text to translate..."></textarea>
+                        <span>0 characters</span>
+                    </div>
+
+                    <div class="translation-output">
+                        <div id="translationResult">
+                            Translation will appear here...
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="translation-bottom">
+                    <button class="secondary-btn">🎙 Voice Input</button>
+                    <button class="primary-btn" onclick="translateText()">Translate ✦</button>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= TASK PLANNER ================= -->
+
+        <section id="tasks" class="page">
+
+            <div class="hero">
+                <div>
+                    <span class="eyebrow">PRODUCTIVITY AI</span>
+                    <h1>AI Task Planner</h1>
+                    <p>Turn your goals into an organized daily action plan.</p>
+                </div>
+
+                <button class="primary-btn">+ Add Task</button>
+            </div>
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+                    <span>Today's Tasks</span>
+                    <strong>12</strong>
+                </div>
+
+                <div class="stat-card">
+                    <span>Completed</span>
+                    <strong>7</strong>
+                </div>
+
+                <div class="stat-card">
+                    <span>Remaining</span>
+                    <strong>5</strong>
+                </div>
+
+                <div class="stat-card">
+                    <span>Productivity</span>
+                    <strong>84%</strong>
+                </div>
+
+            </div>
+
+            <div class="planner-grid">
+
+                <div class="card task-list">
+
+                    <div class="card-heading">
+                        <h3>Today's Plan</h3>
+                        <span>Wednesday</span>
+                    </div>
+
+                    <div class="task completed">
+                        <input type="checkbox" checked>
+                        <div>
+                            <strong>Complete DAA Assignment</strong>
+                            <small>9:00 AM · Academic</small>
+                        </div>
+                        <span class="priority high">High</span>
+                    </div>
+
+                    <div class="task">
+                        <input type="checkbox">
+                        <div>
+                            <strong>Practice Python</strong>
+                            <small>2:00 PM · Learning</small>
+                        </div>
+                        <span class="priority medium">Medium</span>
+                    </div>
+
+                    <div class="task">
+                        <input type="checkbox">
+                        <div>
+                            <strong>Work on AI Interface</strong>
+                            <small>5:30 PM · Project</small>
+                        </div>
+                        <span class="priority high">High</span>
+                    </div>
+
+                    <div class="task">
+                        <input type="checkbox">
+                        <div>
+                            <strong>Read 20 Pages</strong>
+                            <small>9:00 PM · Personal</small>
+                        </div>
+                        <span class="priority low">Low</span>
+                    </div>
+
+                </div>
+
+
+                <div class="card ai-plan">
+
+                    <div class="ai-avatar">✦</div>
+
+                    <h3>Let AI Plan Your Day</h3>
+
+                    <p>Tell me your goals and I'll create a realistic schedule.</p>
+
+                    <textarea placeholder="Example: I need to study Python, complete my assignment and exercise..."></textarea>
+
+                    <button class="primary-btn">Generate My Plan</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= STYLIST ================= -->
+
+        <section id="stylist" class="page">
+
+            <div class="hero">
+                <div>
+                    <span class="eyebrow">FASHION AI</span>
+                    <h1>AI Personal Stylist</h1>
+                    <p>Get personalized outfit recommendations based on your style.</p>
+                </div>
+            </div>
+
+            <div class="stylist-grid">
+
+                <div class="card style-profile">
+
+                    <h3>Your Style Profile</h3>
+
+                    <div class="profile-option">
+                        <label>Occasion</label>
+                        <select>
+                            <option>College</option>
+                            <option>Casual</option>
+                            <option>Party</option>
+                            <option>Formal</option>
+                            <option>Vacation</option>
+                        </select>
+                    </div>
+
+                    <div class="profile-option">
+                        <label>Style</label>
+                        <select>
+                            <option>Minimal</option>
+                            <option>Streetwear</option>
+                            <option>Classic</option>
+                            <option>Smart Casual</option>
+                        </select>
+                    </div>
+
+                    <div class="profile-option">
+                        <label>Weather</label>
+                        <select>
+                            <option>Hot</option>
+                            <option>Warm</option>
+                            <option>Cold</option>
+                            <option>Rainy</option>
+                        </select>
+                    </div>
+
+                    <button class="primary-btn">Generate Outfit</button>
+
+                </div>
+
+
+                <div class="card outfit-card">
+
+                    <div class="outfit-placeholder">
+                        <div class="hanger">👕</div>
+                        <h3>Your AI Outfit</h3>
+                        <p>Your personalized outfit will appear here.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FITNESS ================= -->
+
+        <section id="fitness" class="page">
+
+            <div class="hero">
+                <div>
+                    <span class="eyebrow">WELLNESS AI</span>
+                    <h1>AI Health & Fitness Planner</h1>
+                    <p>Create a personalized fitness routine and wellness plan.</p>
+                </div>
+            </div>
+
+            <div class="fitness-grid">
+
+                <div class="card fitness-profile">
+
+                    <h3>Your Goals</h3>
+
+                    <label>Primary Goal</label>
+
+                    <div class="goal-options">
+
+                        <button class="goal active">💪 Build Strength</button>
+                        <button class="goal">🏃 Improve Fitness</button>
+                        <button class="goal">⚖️ General Wellness</button>
+
+                    </div>
+
+                    <label>Available Time</label>
+
+                    <select>
+                        <option>30 minutes</option>
+                        <option>45 minutes</option>
+                        <option>60 minutes</option>
+                    </select>
+
+                    <button class="primary-btn">Create Plan</button>
+
+                </div>
+
+
+                <div class="card weekly-plan">
+
+                    <h3>Weekly Plan</h3>
+
+                    <div class="day">
+                        <span>MON</span>
+                        <strong>Full Body</strong>
+                        <small>30 min</small>
+                    </div>
+
+                    <div class="day">
+                        <span>TUE</span>
+                        <strong>Cardio</strong>
+                        <small>25 min</small>
+                    </div>
+
+                    <div class="day">
+                        <span>WED</span>
+                        <strong>Upper Body</strong>
+                        <small>35 min</small>
+                    </div>
+
+                    <div class="day">
+                        <span>THU</span>
+                        <strong>Recovery</strong>
+                        <small>20 min</small>
+                    </div>
+
+                    <div class="day">
+                        <span>FRI</span>
+                        <strong>Lower Body</strong>
+                        <small>35 min</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEEDBACK ================= -->
+
+        <section id="feedback" class="page">
+
+            <div class="feedback-page">
+
+                <div class="feedback-icon">💬</div>
+
+                <span class="eyebrow">HELP US IMPROVE</span>
+
+                <h1>How was your experience?</h1>
+
+                <p>Your feedback helps us improve the AI interface.</p>
+
+                <div class="rating">
+
+                    <button onclick="rate(1)">😞<small>Bad</small></button>
+                    <button onclick="rate(2)">😕<small>Okay</small></button>
+                    <button onclick="rate(3)">🙂<small>Good</small></button>
+                    <button onclick="rate(4)">😄<small>Great</small></button>
+                    <button onclick="rate(5)">🤩<small>Amazing</small></button>
+
+                </div>
+
+                <div class="feedback-form card">
+
+                    <textarea placeholder="Tell us what you liked or what we can improve..."></textarea>
+
+                    <div class="feedback-options">
+
+                        <label>
+                            <input type="checkbox">
+                            UI Design
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            AI Responses
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            Performance
+                        </label>
+
+                    </div>
+
+                    <button class="primary-btn" onclick="submitFeedback()">
+                        Submit Feedback
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ROADMAP ================= -->
+
+        <section id="roadmap" class="page">
+
+            <div class="hero">
+                <div>
+                    <span class="eyebrow">CAREER AI</span>
+                    <h1>AI Learning Roadmap Generator</h1>
+                    <p>Tell AI your goal and get a structured learning journey.</p>
+                </div>
+
+                <button class="primary-btn" onclick="generateRoadmap()">
+                    ✦ Generate Roadmap
+                </button>
+            </div>
+
+            <div class="roadmap-input card">
+
+                <h3>What do you want to learn?</h3>
+
+                <div class="roadmap-fields">
+
+                    <input type="text" placeholder="e.g. Become a Full Stack Developer">
+
+                    <select>
+                        <option>Beginner</option>
+                        <option>Intermediate</option>
+                        <option>Advanced</option>
+                    </select>
+
+                    <select>
+                        <option>3 Months</option>
+                        <option>6 Months</option>
+                        <option>1 Year</option>
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <div class="roadmap">
+
+                <div class="roadmap-line"></div>
+
+                <div class="roadmap-item">
+                    <div class="roadmap-number">01</div>
+
+                    <div class="roadmap-content card">
+                        <span>WEEK 1–2</span>
+                        <h3>Web Fundamentals</h3>
+                        <p>Learn HTML, CSS, JavaScript and browser fundamentals.</p>
+
+                        <div class="skill-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="roadmap-item">
+                    <div class="roadmap-number">02</div>
+
+                    <div class="roadmap-content card">
+                        <span>WEEK 3–5</span>
+                        <h3>Frontend Development</h3>
+                        <p>Build interactive interfaces using modern frontend technologies.</p>
+
+                        <div class="skill-tags">
+                            <span>React</span>
+                            <span>Components</span>
+                            <span>APIs</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="roadmap-item">
+                    <div class="roadmap-number">03</div>
+
+                    <div class="roadmap-content card">
+                        <span>WEEK 6–8</span>
+                        <h3>Backend Development</h3>
+                        <p>Learn servers, databases, APIs and authentication.</p>
+
+                        <div class="skill-tags">
+                            <span>Node.js</span>
+                            <span>Database</span>
+                            <span>REST API</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="roadmap-item">
+                    <div class="roadmap-number">04</div>
+
+                    <div class="roadmap-content card">
+                        <span>WEEK 9–12</span>
+                        <h3>Build Real Projects</h3>
+                        <p>Create and deploy complete full-stack applications.</p>
+
+                        <div class="skill-tags">
+                            <span>GitHub</span>
+                            <span>Deployment</span>
+                            <span>Projects</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
