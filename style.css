@@ -1,0 +1,302 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #182230;
+    min-height: 100vh;
+}
+
+header {
+    background: #4f46e5;
+    color: white;
+    padding: 16px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+header h2 {
+    font-size: 21px;
+}
+
+nav {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 7px 10px;
+    border-radius: 7px;
+}
+
+nav a:hover {
+    background: #3730a3;
+}
+
+main {
+    max-width: 1050px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+.home {
+    text-align: center;
+}
+
+.home h1,
+.hero h1 {
+    font-size: 38px;
+    margin: 12px 0;
+}
+
+.home > p,
+.hero > p {
+    color: #667085;
+}
+
+.tag {
+    display: inline-block;
+    background: #e9e7ff;
+    color: #4f46e5;
+    padding: 7px 13px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.tile {
+    background: white;
+    padding: 22px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #182230;
+    border: 1px solid #e5e7eb;
+    transition: 0.2s;
+}
+
+.tile:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px #0001;
+}
+
+.tile span {
+    color: #4f46e5;
+    font-weight: bold;
+}
+
+.tile h3 {
+    margin: 8px 0;
+}
+
+.tile p {
+    color: #667085;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.card,
+.chat-box,
+.response-card,
+.search-result {
+    background: white;
+    padding: 22px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px #0000000c;
+    margin-top: 18px;
+}
+
+.chat-box {
+    min-height: 300px;
+}
+
+.message {
+    padding: 12px 15px;
+    border-radius: 12px;
+    margin: 10px 0;
+    max-width: 75%;
+}
+
+.bot {
+    background: #eef0ff;
+}
+
+.user {
+    background: #4f46e5;
+    color: white;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccd2df;
+    border-radius: 9px;
+    font-size: 15px;
+}
+
+textarea {
+    min-height: 170px;
+    resize: vertical;
+}
+
+button {
+    border: 0;
+    background: #4f46e5;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.light {
+    background: #e9e7ff;
+    color: #4f46e5;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 20px;
+}
+
+.sidebar {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    height: max-content;
+}
+
+.side {
+    width: 100%;
+    margin: 6px 0;
+    text-align: left;
+    background: #eef0ff;
+    color: #4f46e5;
+}
+
+.chips,
+.suggestions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.suggestions button {
+    background: white;
+    color: #4f46e5;
+    border: 1px solid #bfc4ff;
+}
+
+.results {
+    margin-top: 20px;
+}
+
+.search-result h3 {
+    margin-bottom: 8px;
+}
+
+.search-result small {
+    color: #4f46e5;
+}
+
+.response-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.badge {
+    background: #e7f8ed;
+    color: #18864b;
+    padding: 6px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.status {
+    color: #4f46e5;
+    margin-top: 10px;
+}
+
+.two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #667085;
+}
+
+@media (max-width: 750px) {
+
+    header {
+        display: block;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    .grid,
+    .two,
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+    .home h1,
+    .hero h1 {
+        font-size: 29px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .message {
+        max-width: 90%;
+    }
+}
