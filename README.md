@@ -376,7 +376,15 @@ The objective is to build reusable UI patterns while gaining practical experienc
 
 <img width="1183" height="803" alt="Screenshot 2026-10-02 220328" src="https://github.com/user-attachments/assets/4059fa3f-7386-44db-9c7e-55a32d75d30e" />
 
+## Member4
 
+<img width="1280" height="832" alt="Screenshot 2026-10-02 at 9 23 50 PM" src="https://github.com/user-attachments/assets/2121614f-d104-43ab-a8f0-5dfc6960e286" />
+
+<img width="1280" height="832" alt="Screenshot 2026-10-02 at 9 24 12 PM" src="https://github.com/user-attachments/assets/44117f89-7aca-49a9-b918-9cb7e877d324" />
+
+<img width="1280" height="832" alt="Screenshot 2026-10-02 at 9 24 06 PM" src="https://github.com/user-attachments/assets/194ff4c2-3bbc-4c23-9eed-5717eb266157" />
+
+<img width="1280" height="832" alt="Screenshot 2026-10-02 at 9 24 03 PM" src="https://github.com/user-attachments/assets/5c8cbdf8-d164-470d-b8a3-5bbff6b2bf40" />
 
 
 
