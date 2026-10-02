@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Prompt Interface</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h2>AI Interfaces</h2>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="ai-assistant.html">1</a>
+        <a href="ai-chat.html">2</a>
+        <a href="ai-chat-sidebar.html">3</a>
+        <a href="ai-command-bar.html">4</a>
+        <a href="ai-search.html">5</a>
+        <a href="ai-search-results.html">6</a>
+        <a href="ai-prompt-interface.html">7</a>
+        <a href="ai-prompt-suggestions.html">8</a>
+        <a href="ai-response-card.html">9</a>
+        <a href="ai-summary-card.html">10</a>
+    </nav>
+</header>
+
+<main>
+
+    <div class="hero">
+
+        <span class="tag">07</span>
+
+        <h1>AI Prompt Interface</h1>
+
+        <p>
+            Write a prompt and generate an AI response.
+        </p>
+
+    </div>
+
+    <textarea
+        id="promptInput"
+        placeholder="Write your prompt here..."
+    ></textarea>
+
+    <div class="row">
+
+        <button onclick="generatePrompt()">
+            Generate Response
+        </button>
+
+        <button
+            class="light"
+            onclick="clearPrompt()">
+            Clear
+        </button>
+
+    </div>
+
+    <div class="card" id="promptResult">
+        Your AI response will appear here.
+    </div>
+
+</main>
+
+<footer>
+    AI Interfaces Project | Member 1
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

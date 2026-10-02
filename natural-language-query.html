@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Natural Language Query</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Natural-Language Query</h1>
+    <p>Ask questions in simple language</p>
+</header>
+
+<div class="page">
+
+    <a href="index.html" class="back">← Back to Home</a>
+
+    <div class="box">
+
+        <h2>Ask AI</h2>
+
+        <input
+            type="text"
+            id="query"
+            placeholder="Example: What are my best selling products?"
+        >
+
+        <button onclick="queryAI()">Ask AI</button>
+
+        <div id="result" class="result"></div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

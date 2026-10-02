@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Code Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+
+    <header>
+
+        <div>
+            <span>AI INTERFACE 04</span>
+            <h1>Code Assistant</h1>
+            <p>Generate, explain and improve code with AI.</p>
+        </div>
+
+        <select id="language">
+            <option>JavaScript</option>
+            <option>Python</option>
+            <option>C</option>
+        </select>
+
+    </header>
+
+    <section class="workspace">
+
+        <div class="panel">
+
+            <div class="panel-head">
+                <b>Prompt</b>
+                <span>⌘ Enter</span>
+            </div>
+
+            <textarea
+                id="prompt"
+                placeholder="Describe the code you need..."
+            ></textarea>
+
+            <button id="generate">
+                Generate Code
+            </button>
+
+        </div>
+
+        <div class="panel output">
+
+            <div class="panel-head">
+                <b>AI Output</b>
+                <button id="copy">Copy</button>
+            </div>
+
+            <pre id="code">// Your generated code will appear here.</pre>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

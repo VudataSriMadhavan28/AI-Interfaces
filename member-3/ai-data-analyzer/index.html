@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Data Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+
+    <header>
+
+        <div>
+            <span>AI INTERFACE 09</span>
+            <h1>Data Analyzer</h1>
+            <p>
+                Ask for insights from a dataset
+                and review AI findings.
+            </p>
+        </div>
+
+        <button id="analyze">
+            Analyze Data
+        </button>
+
+    </header>
+
+    <section class="stats">
+
+        <div class="stat">
+            <small>Rows</small>
+            <strong>12,480</strong>
+        </div>
+
+        <div class="stat">
+            <small>Revenue</small>
+            <strong>₹18.4L</strong>
+        </div>
+
+        <div class="stat">
+            <small>Growth</small>
+            <strong>+14.8%</strong>
+        </div>
+
+        <div class="stat">
+            <small>Issues</small>
+            <strong>7</strong>
+        </div>
+
+    </section>
+
+    <section class="layout">
+
+        <div class="card">
+
+            <h2>AI Question</h2>
+
+            <input
+                id="question"
+                value="What changed this month and why?"
+            >
+
+        </div>
+
+        <div class="card">
+
+            <h2>AI Findings</h2>
+
+            <div id="finding">
+                Press Analyze Data to generate insights.
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="card">
+
+        <h2>Trend</h2>
+
+        <div class="chart" id="chart"></div>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

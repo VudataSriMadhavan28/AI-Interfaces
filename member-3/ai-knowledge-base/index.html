@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Knowledge Base</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+
+    <header>
+
+        <div>
+            <span>AI INTERFACE 10</span>
+            <h1>Knowledge Base</h1>
+            <p>
+                Search internal knowledge with natural language.
+            </p>
+        </div>
+
+        <button id="ask">
+            Ask AI
+        </button>
+
+    </header>
+
+    <section class="search">
+
+        <input
+            id="query"
+            placeholder="Ask about onboarding, policies, products..."
+        >
+
+        <div class="suggestions">
+
+            <button data-q="How do I onboard a new employee?">
+                Onboarding
+            </button>
+
+            <button data-q="What is our refund policy?">
+                Refund policy
+            </button>
+
+            <button data-q="Where is the API documentation?">
+                API docs
+            </button>
+
+        </div>
+
+    </section>
+
+    <section id="answer" class="answer">
+
+        <small>AI ANSWER</small>
+
+        <h2>Search the knowledge base</h2>
+
+        <p>
+            Your answer will appear here with
+            related documents and confidence.
+        </p>
+
+    </section>
+
+    <section class="docs">
+
+        <div>
+            <b>Employee Handbook</b>
+            <span>Updated today</span>
+        </div>
+
+        <div>
+            <b>Product Documentation</b>
+            <span>Updated 2 days ago</span>
+        </div>
+
+        <div>
+            <b>Support Policies</b>
+            <span>Updated last week</span>
+        </div>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AI File Analyzer</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main class="app">
+            <header>
+                <div>
+                    <span class="eyebrow">AI Interface 01</span>
+                    <h1>File Analyzer</h1>
+                    <p>Upload a file and get an instant AI-generated overview.</p>
+                </div>
+                <button id="newBtn">New Analysis</button>
+            </header>
+            <section class="grid">
+                <div class="card upload">
+                    <div class="icon">↑</div>
+                    <h2>Drop your file here</h2>
+                    <p>PDF, DOCX, TXT, CSV up to 20 MB</p>
+                    <input id="fileInput" type="file" hidden>
+                    <button id="uploadBtn" class="primary">Choose File</button>
+                    <div id="fileName" class="muted">No file selected</div>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                        <h2>AI Analysis</h2>
+                        <span class="status">Ready</span>
+                    </div>
+                    <div id="analysis" class="empty">Upload a file to generate a summary, key topics and action items.</div>
+                </div>
+            </section>
+            <section class="card">
+                <div class="card-head">
+                    <h2>Key Insights</h2>
+                    <span id="count">0 insights</span>
+                </div>
+                <div id="insights" class="insights"></div>
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>

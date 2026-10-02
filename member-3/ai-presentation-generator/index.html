@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Presentation Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+
+    <header>
+        <div>
+            <span>AI INTERFACE 07</span>
+            <h1>Presentation Generator</h1>
+            <p>Create a slide outline from a topic.</p>
+        </div>
+    </header>
+
+    <section class="card controls">
+
+        <input
+            id="topic"
+            value="Future of Artificial Intelligence"
+        >
+
+        <select id="slides">
+            <option>5 slides</option>
+            <option>7 slides</option>
+            <option>10 slides</option>
+        </select>
+
+        <button id="generate">
+            Generate Deck
+        </button>
+
+    </section>
+
+    <section id="deck" class="deck"></section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
